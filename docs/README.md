@@ -71,9 +71,9 @@ client.meta
 {
   'meta' =>
     {
-      'at' => '2024-09-29T14:09:06.891354452Z',
+      'at' => '2024-09-29T14:29:21.732845703Z',
       'mode' => 'peer',
-      'took' => { 'milliseconds' => 0.439342 }
+      'took' => { 'milliseconds' => 0.527632 }
     },
   'data' =>
   {
@@ -95,7 +95,6 @@ client.meta
 ```bash
 bundle
 rubocop -A
-
 ```
 
 ### Publish to RubyGems
@@ -106,7 +105,6 @@ gem build {{ gem.name }}.gemspec
 gem signin
 
 gem push {{ gem.name }}-{{ gem.version }}.gem
-
 ```
 
 ### Setup for Tests and Documentation
@@ -150,7 +148,6 @@ CLOJURE
 docker compose up -d datomic-peer-server
 
 docker compose up -d datomic-flare-peer datomic-flare-client
-
 ```
 
 ```bash
@@ -158,7 +155,6 @@ curl -s http://localhost:3042/meta \
   -X GET \
   -H "Content-Type: application/json"  \
 | jq
-
 ```
 
 ```json
@@ -167,7 +163,6 @@ curl -s http://localhost:3042/meta \
     "mode": "peer"
   }
 }
-
 ```
 
 ```bash
@@ -175,7 +170,6 @@ curl -s http://localhost:3043/meta \
   -X GET \
   -H "Content-Type: application/json"  \
 | jq
-
 ```
 
 ```json
@@ -184,7 +178,6 @@ curl -s http://localhost:3043/meta \
     "mode": "client"
   }
 }
-
 ```
 
 You are ready to run tests and generate documentation.
@@ -199,7 +192,6 @@ git clone https://github.com/gbaptista/datomic-pro-docker.git
 cd datomic-pro-docker
 
 cp compose/flare-dev.yml docker-compose.yml
-
 ```
 
 Start PostgreSQL as Datomic's storage service:
@@ -208,7 +200,6 @@ Start PostgreSQL as Datomic's storage service:
 docker compose up -d datomic-storage
 
 docker compose logs -f datomic-storage
-
 ```
 
 Create the table for Datomic databases:
@@ -219,7 +210,6 @@ docker compose run datomic-tools psql \
   -h datomic-storage \
   -U datomic-user \
   -d my-datomic-storage
-
 ```
 
 You will be prompted for a password, which is `unsafe`.
@@ -230,7 +220,6 @@ Start the Datomic Transactor:
 docker compose up -d datomic-transactor
 
 docker compose logs -f datomic-transactor
-
 ```
 
 Create the following databases:
@@ -252,7 +241,6 @@ docker compose run datomic-tools clojure -M -e "$(cat <<'CLOJURE'
   (System/exit 0)
 CLOJURE
 )"
-
 ```
 
 Start the Peer Server:
@@ -261,7 +249,6 @@ Start the Peer Server:
 docker compose up -d datomic-peer-server
 
 docker compose logs -f datomic-peer-server
-
 ```
 
 Start 2 instances of Flare, one in Peer Mode and another in Client Mode:
@@ -271,7 +258,6 @@ docker compose up -d datomic-flare-peer datomic-flare-client
 
 docker compose logs -f datomic-flare-peer
 docker compose logs -f datomic-flare-client
-
 ```
 
 You should be able to request both:
@@ -282,7 +268,6 @@ curl -s http://localhost:3042/meta \
   -X GET \
   -H "Content-Type: application/json"  \
 | jq
-
 ```
 
 ```json
@@ -291,7 +276,6 @@ curl -s http://localhost:3042/meta \
     "mode": "peer"
   }
 }
-
 ```
 
 Datomic Flare in Client Mode:
@@ -300,7 +284,6 @@ curl -s http://localhost:3043/meta \
   -X GET \
   -H "Content-Type: application/json"  \
 | jq
-
 ```
 
 ```json
@@ -309,7 +292,6 @@ curl -s http://localhost:3043/meta \
     "mode": "client"
   }
 }
-
 ```
 
 You are ready to run tests and generate documentation.
@@ -322,7 +304,6 @@ Tests run against real Datomic databases, so complete the [Setup for Tests and D
 cp .env.example .env
 
 bundle exec rspec
-
 ```
 
 ### Updating the README
@@ -335,7 +316,6 @@ Update the `docs/templates/*.md` files, and then:
 cp .env.example .env
 
 bundle exec ruby ports/cli.rb docs:generate
-
 ```
 
 Trick for automatically updating the `README.md` when `docs/templates/*.md` files change:
@@ -348,7 +328,6 @@ sudo dnf install inotify-tools # Fedora / CentOS / RHEL
 while inotifywait -e modify docs/templates/*; \
   do bundle exec ruby ports/cli.rb docs:generate; \
   done
-
 ```
 
 Trick for Markdown Live Preview:
@@ -356,5 +335,4 @@ Trick for Markdown Live Preview:
 pip install -U markdown_live_preview
 
 mlp README.md -p 8042 --no-follow
-
 ```

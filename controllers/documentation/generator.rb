@@ -256,7 +256,7 @@ module Flare
                   output << formatted_code
                 end
               else
-                output.concat(buffer[:lines])
+                output << buffer[:lines].join.strip
               end
 
               output << "\n```\n" if tag != 'state' && !['to-request', 'render->to-request'].include?(action)

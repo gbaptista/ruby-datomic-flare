@@ -101,9 +101,9 @@ client.meta
 {
   'meta' =>
     {
-      'at' => '2024-09-29T14:09:06.891354452Z',
+      'at' => '2024-09-29T14:29:21.732845703Z',
       'mode' => 'peer',
-      'took' => { 'milliseconds' => 0.439342 }
+      'took' => { 'milliseconds' => 0.527632 }
     },
   'data' =>
   {
@@ -446,10 +446,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@7740573a',
-  'db-after' => 'datomic.db.Db@7898935d',
+  'db-before' => 'datomic.db.Db@72351777',
+  'db-after' => 'datomic.db.Db@34ed3129',
   'tx-data' =>
-  [[13194139534312, 50, '2024-09-29T14:09:07.059Z', 13194139534312, true],
+  [[13194139534312, 50, '2024-09-29T14:29:21.908Z', 13194139534312, true],
    [72, 10, ':book/title', 13194139534312, true],
    [72, 40, 23, 13194139534312, true],
    [72, 41, 35, 13194139534312, true],
@@ -467,9 +467,9 @@ client.api.transact!(
    [0, 13, 74, 13194139534312, true]],
   'tempids' =>
   {
-    '-9223300668110558605' => 72,
-    '-9223300668110558604' => 73,
-    '-9223300668110558603' => 74
+    '-9223300668110558584' => 72,
+    '-9223300668110558583' => 73,
+    '-9223300668110558582' => 74
   }
 }
 ```
@@ -556,10 +556,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@4f9110f1',
-  'db-after' => 'datomic.db.Db@1b8a609c',
+  'db-before' => 'datomic.db.Db@6674710',
+  'db-after' => 'datomic.db.Db@2d37f88f',
   'tx-data' =>
-  [[13194139534313, 50, '2024-09-29T14:09:07.167Z', 13194139534313, true],
+  [[13194139534313, 50, '2024-09-29T14:29:22.020Z', 13194139534313, true],
    [4611681620380877802, 72, 'Pride and Prejudice', 13194139534313, true],
    [4611681620380877802, 73, 'Romance', 13194139534313, true],
    [4611681620380877802, 74, 1813, 13194139534313, true]],
@@ -590,10 +590,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@6e061d50',
-  'db-after' => 'datomic.db.Db@523869b6',
+  'db-before' => 'datomic.db.Db@23f01359',
+  'db-after' => 'datomic.db.Db@27cf93ff',
   'tx-data' =>
-  [[13194139534315, 50, '2024-09-29T14:09:07.207Z', 13194139534315, true],
+  [[13194139534315, 50, '2024-09-29T14:29:22.072Z', 13194139534315, true],
    [4611681620380877804, 72, 'Near to the Wild Heart', 13194139534315, true],
    [4611681620380877804, 73, 'Novel', 13194139534315, true],
    [4611681620380877804, 74, 1943, 13194139534315, true],
@@ -691,10 +691,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@15e9ed98',
-  'db-after' => 'datomic.db.Db@29007ec5',
+  'db-before' => 'datomic.db.Db@62cd1962',
+  'db-after' => 'datomic.db.Db@702c6634',
   'tx-data' =>
-  [[13194139534319, 50, '2024-09-29T14:09:07.420Z', 13194139534319, true],
+  [[13194139534319, 50, '2024-09-29T14:29:22.286Z', 13194139534319, true],
    [4611681620380877806, 73, 'Gothic', 13194139534319, true],
    [4611681620380877806, 73, 'Horror', 13194139534319, false]],
   'tempids' => {}
@@ -716,10 +716,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@27c78595',
-  'db-after' => 'datomic.db.Db@5d2ff139',
+  'db-before' => 'datomic.db.Db@271bc3fa',
+  'db-after' => 'datomic.db.Db@7d4ff6c1',
   'tx-data' =>
-  [[13194139534320, 50, '2024-09-29T14:09:07.470Z', 13194139534320, true],
+  [[13194139534320, 50, '2024-09-29T14:29:22.337Z', 13194139534320, true],
    [4611681620380877806, 73, 'Gothic', 13194139534320, false]],
   'tempids' => {}
 }
@@ -738,10 +738,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@23f815b5',
-  'db-after' => 'datomic.db.Db@39d9b51',
+  'db-before' => 'datomic.db.Db@20f6e438',
+  'db-after' => 'datomic.db.Db@1c1568f1',
   'tx-data' =>
-  [[13194139534321, 50, '2024-09-29T14:09:07.510Z', 13194139534321, true],
+  [[13194139534321, 50, '2024-09-29T14:29:22.377Z', 13194139534321, true],
    [4611681620380877804, 73, 'Novel', 13194139534321, false]],
   'tempids' => {}
 }
@@ -760,10 +760,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@66fa8fae',
-  'db-after' => 'datomic.db.Db@60c2b7f2',
+  'db-before' => 'datomic.db.Db@65687c9a',
+  'db-after' => 'datomic.db.Db@67937708',
   'tx-data' =>
-  [[13194139534322, 50, '2024-09-29T14:09:07.550Z', 13194139534322, true],
+  [[13194139534322, 50, '2024-09-29T14:29:22.416Z', 13194139534322, true],
    [4611681620380877805, 72, 'A Study in Scarlet', 13194139534322, false],
    [4611681620380877805, 73, 'Detective', 13194139534322, false],
    [4611681620380877805, 74, 1887, 13194139534322, false]],
@@ -777,7 +777,6 @@ client.api.transact!(
 ```bash
 bundle
 rubocop -A
-
 ```
 
 ### Publish to RubyGems
@@ -788,7 +787,6 @@ gem build datomic-flare.gemspec
 gem signin
 
 gem push datomic-flare-1.0.1.gem
-
 ```
 
 ### Setup for Tests and Documentation
@@ -832,7 +830,6 @@ CLOJURE
 docker compose up -d datomic-peer-server
 
 docker compose up -d datomic-flare-peer datomic-flare-client
-
 ```
 
 ```bash
@@ -840,7 +837,6 @@ curl -s http://localhost:3042/meta \
   -X GET \
   -H "Content-Type: application/json"  \
 | jq
-
 ```
 
 ```json
@@ -849,7 +845,6 @@ curl -s http://localhost:3042/meta \
     "mode": "peer"
   }
 }
-
 ```
 
 ```bash
@@ -857,7 +852,6 @@ curl -s http://localhost:3043/meta \
   -X GET \
   -H "Content-Type: application/json"  \
 | jq
-
 ```
 
 ```json
@@ -866,7 +860,6 @@ curl -s http://localhost:3043/meta \
     "mode": "client"
   }
 }
-
 ```
 
 You are ready to run tests and generate documentation.
@@ -881,7 +874,6 @@ git clone https://github.com/gbaptista/datomic-pro-docker.git
 cd datomic-pro-docker
 
 cp compose/flare-dev.yml docker-compose.yml
-
 ```
 
 Start PostgreSQL as Datomic's storage service:
@@ -890,7 +882,6 @@ Start PostgreSQL as Datomic's storage service:
 docker compose up -d datomic-storage
 
 docker compose logs -f datomic-storage
-
 ```
 
 Create the table for Datomic databases:
@@ -901,7 +892,6 @@ docker compose run datomic-tools psql \
   -h datomic-storage \
   -U datomic-user \
   -d my-datomic-storage
-
 ```
 
 You will be prompted for a password, which is `unsafe`.
@@ -912,7 +902,6 @@ Start the Datomic Transactor:
 docker compose up -d datomic-transactor
 
 docker compose logs -f datomic-transactor
-
 ```
 
 Create the following databases:
@@ -934,7 +923,6 @@ docker compose run datomic-tools clojure -M -e "$(cat <<'CLOJURE'
   (System/exit 0)
 CLOJURE
 )"
-
 ```
 
 Start the Peer Server:
@@ -943,7 +931,6 @@ Start the Peer Server:
 docker compose up -d datomic-peer-server
 
 docker compose logs -f datomic-peer-server
-
 ```
 
 Start 2 instances of Flare, one in Peer Mode and another in Client Mode:
@@ -953,7 +940,6 @@ docker compose up -d datomic-flare-peer datomic-flare-client
 
 docker compose logs -f datomic-flare-peer
 docker compose logs -f datomic-flare-client
-
 ```
 
 You should be able to request both:
@@ -964,7 +950,6 @@ curl -s http://localhost:3042/meta \
   -X GET \
   -H "Content-Type: application/json"  \
 | jq
-
 ```
 
 ```json
@@ -973,7 +958,6 @@ curl -s http://localhost:3042/meta \
     "mode": "peer"
   }
 }
-
 ```
 
 Datomic Flare in Client Mode:
@@ -982,7 +966,6 @@ curl -s http://localhost:3043/meta \
   -X GET \
   -H "Content-Type: application/json"  \
 | jq
-
 ```
 
 ```json
@@ -991,7 +974,6 @@ curl -s http://localhost:3043/meta \
     "mode": "client"
   }
 }
-
 ```
 
 You are ready to run tests and generate documentation.
@@ -1004,7 +986,6 @@ Tests run against real Datomic databases, so complete the [Setup for Tests and D
 cp .env.example .env
 
 bundle exec rspec
-
 ```
 
 ### Updating the README
@@ -1017,7 +998,6 @@ Update the `docs/templates/*.md` files, and then:
 cp .env.example .env
 
 bundle exec ruby ports/cli.rb docs:generate
-
 ```
 
 Trick for automatically updating the `README.md` when `docs/templates/*.md` files change:
@@ -1030,7 +1010,6 @@ sudo dnf install inotify-tools # Fedora / CentOS / RHEL
 while inotifywait -e modify docs/templates/*; \
   do bundle exec ruby ports/cli.rb docs:generate; \
   done
-
 ```
 
 Trick for Markdown Live Preview:
@@ -1038,5 +1017,4 @@ Trick for Markdown Live Preview:
 pip install -U markdown_live_preview
 
 mlp README.md -p 8042 --no-follow
-
 ```
