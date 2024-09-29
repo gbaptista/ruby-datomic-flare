@@ -9,7 +9,7 @@ _This is not an official Datomic project or documentation and it is not affiliat
 ## TL;DR and Quick Start
 
 ```ruby
-gem 'datomic-flare', '~> 1.0.0'
+gem 'datomic-flare', '~> 1.0.1'
 ```
 
 ```ruby
@@ -101,9 +101,9 @@ client.meta
 {
   'meta' =>
     {
-      'at' => '2024-09-29T13:52:52.252882446Z',
+      'at' => '2024-09-29T14:09:06.891354452Z',
       'mode' => 'peer',
-      'took' => { 'milliseconds' => 0.377446 }
+      'took' => { 'milliseconds' => 0.439342 }
     },
   'data' =>
   {
@@ -446,10 +446,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@3062d44c',
-  'db-after' => 'datomic.db.Db@7802aade',
+  'db-before' => 'datomic.db.Db@7740573a',
+  'db-after' => 'datomic.db.Db@7898935d',
   'tx-data' =>
-  [[13194139534312, 50, '2024-09-29T13:52:52.435Z', 13194139534312, true],
+  [[13194139534312, 50, '2024-09-29T14:09:07.059Z', 13194139534312, true],
    [72, 10, ':book/title', 13194139534312, true],
    [72, 40, 23, 13194139534312, true],
    [72, 41, 35, 13194139534312, true],
@@ -467,9 +467,9 @@ client.api.transact!(
    [0, 13, 74, 13194139534312, true]],
   'tempids' =>
   {
-    '-9223300668110558618' => 72,
-    '-9223300668110558617' => 73,
-    '-9223300668110558616' => 74
+    '-9223300668110558605' => 72,
+    '-9223300668110558604' => 73,
+    '-9223300668110558603' => 74
   }
 }
 ```
@@ -556,10 +556,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@5342ef1a',
-  'db-after' => 'datomic.db.Db@643ac781',
+  'db-before' => 'datomic.db.Db@4f9110f1',
+  'db-after' => 'datomic.db.Db@1b8a609c',
   'tx-data' =>
-  [[13194139534313, 50, '2024-09-29T13:52:52.546Z', 13194139534313, true],
+  [[13194139534313, 50, '2024-09-29T14:09:07.167Z', 13194139534313, true],
    [4611681620380877802, 72, 'Pride and Prejudice', 13194139534313, true],
    [4611681620380877802, 73, 'Romance', 13194139534313, true],
    [4611681620380877802, 74, 1813, 13194139534313, true]],
@@ -590,10 +590,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@6afd3576',
-  'db-after' => 'datomic.db.Db@73000a74',
+  'db-before' => 'datomic.db.Db@6e061d50',
+  'db-after' => 'datomic.db.Db@523869b6',
   'tx-data' =>
-  [[13194139534315, 50, '2024-09-29T13:52:52.599Z', 13194139534315, true],
+  [[13194139534315, 50, '2024-09-29T14:09:07.207Z', 13194139534315, true],
    [4611681620380877804, 72, 'Near to the Wild Heart', 13194139534315, true],
    [4611681620380877804, 73, 'Novel', 13194139534315, true],
    [4611681620380877804, 74, 1943, 13194139534315, true],
@@ -691,10 +691,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@55e660ec',
-  'db-after' => 'datomic.db.Db@385f74d4',
+  'db-before' => 'datomic.db.Db@15e9ed98',
+  'db-after' => 'datomic.db.Db@29007ec5',
   'tx-data' =>
-  [[13194139534319, 50, '2024-09-29T13:52:52.817Z', 13194139534319, true],
+  [[13194139534319, 50, '2024-09-29T14:09:07.420Z', 13194139534319, true],
    [4611681620380877806, 73, 'Gothic', 13194139534319, true],
    [4611681620380877806, 73, 'Horror', 13194139534319, false]],
   'tempids' => {}
@@ -716,10 +716,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@7c2176fa',
-  'db-after' => 'datomic.db.Db@6ec2acf1',
+  'db-before' => 'datomic.db.Db@27c78595',
+  'db-after' => 'datomic.db.Db@5d2ff139',
   'tx-data' =>
-  [[13194139534320, 50, '2024-09-29T13:52:52.869Z', 13194139534320, true],
+  [[13194139534320, 50, '2024-09-29T14:09:07.470Z', 13194139534320, true],
    [4611681620380877806, 73, 'Gothic', 13194139534320, false]],
   'tempids' => {}
 }
@@ -738,10 +738,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@f8180a0',
-  'db-after' => 'datomic.db.Db@2bc03f4d',
+  'db-before' => 'datomic.db.Db@23f815b5',
+  'db-after' => 'datomic.db.Db@39d9b51',
   'tx-data' =>
-  [[13194139534321, 50, '2024-09-29T13:52:52.913Z', 13194139534321, true],
+  [[13194139534321, 50, '2024-09-29T14:09:07.510Z', 13194139534321, true],
    [4611681620380877804, 73, 'Novel', 13194139534321, false]],
   'tempids' => {}
 }
@@ -760,10 +760,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@698670bc',
-  'db-after' => 'datomic.db.Db@2abc508c',
+  'db-before' => 'datomic.db.Db@66fa8fae',
+  'db-after' => 'datomic.db.Db@60c2b7f2',
   'tx-data' =>
-  [[13194139534322, 50, '2024-09-29T13:52:52.955Z', 13194139534322, true],
+  [[13194139534322, 50, '2024-09-29T14:09:07.550Z', 13194139534322, true],
    [4611681620380877805, 72, 'A Study in Scarlet', 13194139534322, false],
    [4611681620380877805, 73, 'Detective', 13194139534322, false],
    [4611681620380877805, 74, 1887, 13194139534322, false]],
@@ -787,7 +787,7 @@ gem build datomic-flare.gemspec
 
 gem signin
 
-gem push datomic-flare-1.0.0.gem
+gem push datomic-flare-1.0.1.gem
 
 ```
 

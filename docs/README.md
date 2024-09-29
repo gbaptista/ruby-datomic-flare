@@ -71,9 +71,9 @@ client.meta
 {
   'meta' =>
     {
-      'at' => '2024-09-29T13:52:52.252882446Z',
+      'at' => '2024-09-29T14:09:06.891354452Z',
       'mode' => 'peer',
-      'took' => { 'milliseconds' => 0.377446 }
+      'took' => { 'milliseconds' => 0.439342 }
     },
   'data' =>
   {

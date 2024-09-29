@@ -33,6 +33,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'faraday-typhoeus', '~> 1.1'
   spec.add_dependency 'typhoeus', '~> 1.4', '>= 1.4.1'
 
+  spec.add_dependency 'bigdecimal', '~> 3.1', '>= 3.1.8'
+
   spec.add_dependency 'uuidx', '~> 0.10.0'
 
   spec.metadata['rubygems_mfa_required'] = 'true'
