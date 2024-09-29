@@ -1,0 +1,15 @@
+AllCops:
+  TargetRubyVersion: 3.1.0
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false
+
+RSpec/SpecFilePathFormat:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+require:
+ - rubocop-rspec

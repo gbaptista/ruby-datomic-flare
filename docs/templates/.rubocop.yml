@@ -1,0 +1,15 @@
+AllCops:
+  TargetRubyVersion: 3.1.0
+  NewCops: enable
+
+Style/NumericLiterals:
+  Enabled: false
+
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+
+Lint/UselessAssignment:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
