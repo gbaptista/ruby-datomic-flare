@@ -101,7 +101,7 @@ git clone https://github.com/gbaptista/datomic-pro-docker.git
 
 cd datomic-pro-docker
 
-cp compose/flare-dev.yml docker-compose.yml
+cp compose/datomic-flare-dev.yml docker-compose.yml
 
 docker compose up -d datomic-storage
 
@@ -172,7 +172,7 @@ git clone https://github.com/gbaptista/datomic-pro-docker.git
 
 cd datomic-pro-docker
 
-cp compose/flare-dev.yml docker-compose.yml
+cp compose/datomic-flare-dev.yml docker-compose.yml
 ```
 
 Start PostgreSQL as Datomic's storage service:
