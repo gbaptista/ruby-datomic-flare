@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe 'Datomic Flare Client', :client do
+RSpec.describe 'Flare Client', :client do
   let(:schema) do
     {
       post: {

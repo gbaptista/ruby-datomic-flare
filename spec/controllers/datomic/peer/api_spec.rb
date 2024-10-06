@@ -2,7 +2,7 @@
 
 require './components/errors'
 
-RSpec.describe 'Datomic Flare Client', :peer do
+RSpec.describe 'Flare Client', :peer do
   it 'responds according to Peer mode' do
     expect(@flare.meta['meta']['mode']).to eq('peer')
 

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe 'Datomic Flare Client', :peer do
+RSpec.describe 'Flare Client', :peer do
   let(:schema) do
     {
       post: {

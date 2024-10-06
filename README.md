@@ -1,8 +1,8 @@
-# Datomic Flare for Ruby
+# Flare for Ruby
 
-A Ruby gem for interacting with [Datomic](https://www.datomic.com) through [Datomic Flare](https://github.com/gbaptista/datomic-flare).
+A Ruby gem for interacting with [Datomic](https://www.datomic.com) through [Flare](https://github.com/gbaptista/datomic-flare).
 
-![The image features a logo with curved lines forming a ruby, suggesting distortion and movement like space-time.](https://media.githubusercontent.com/media/gbaptista/assets/refs/heads/main/ruby-datomic-flare/ruby-datomic-flare-canvas.png)
+![The image features a logo with curved lines forming a ruby, suggesting distortion and movement like space-time.](https://raw.githubusercontent.com/gbaptista/assets/refs/heads/main/ruby-datomic-flare/ruby-datomic-flare-canvas.jpg)
 
 _This is not an official Datomic project or documentation and it is not affiliated with Datomic in any way._
 
@@ -101,9 +101,9 @@ client.meta
 {
   'meta' =>
     {
-      'at' => '2024-09-29T14:29:21.732845703Z',
+      'at' => '2024-10-06T13:17:38.761128603Z',
       'mode' => 'peer',
-      'took' => { 'milliseconds' => 0.527632 }
+      'took' => { 'milliseconds' => 0.500799 }
     },
   'data' =>
   {
@@ -446,10 +446,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@72351777',
-  'db-after' => 'datomic.db.Db@34ed3129',
+  'db-before' => 'datomic.db.Db@7978603f',
+  'db-after' => 'datomic.db.Db@359875e3',
   'tx-data' =>
-  [[13194139534312, 50, '2024-09-29T14:29:21.908Z', 13194139534312, true],
+  [[13194139534312, 50, '2024-10-06T13:17:38.945Z', 13194139534312, true],
    [72, 10, ':book/title', 13194139534312, true],
    [72, 40, 23, 13194139534312, true],
    [72, 41, 35, 13194139534312, true],
@@ -467,9 +467,9 @@ client.api.transact!(
    [0, 13, 74, 13194139534312, true]],
   'tempids' =>
   {
-    '-9223300668110558584' => 72,
-    '-9223300668110558583' => 73,
-    '-9223300668110558582' => 74
+    '-9223300668110597923' => 72,
+    '-9223300668110597922' => 73,
+    '-9223300668110597921' => 74
   }
 }
 ```
@@ -556,10 +556,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@6674710',
-  'db-after' => 'datomic.db.Db@2d37f88f',
+  'db-before' => 'datomic.db.Db@1fd69b02',
+  'db-after' => 'datomic.db.Db@fb09bc2',
   'tx-data' =>
-  [[13194139534313, 50, '2024-09-29T14:29:22.020Z', 13194139534313, true],
+  [[13194139534313, 50, '2024-10-06T13:17:39.060Z', 13194139534313, true],
    [4611681620380877802, 72, 'Pride and Prejudice', 13194139534313, true],
    [4611681620380877802, 73, 'Romance', 13194139534313, true],
    [4611681620380877802, 74, 1813, 13194139534313, true]],
@@ -590,10 +590,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@23f01359',
-  'db-after' => 'datomic.db.Db@27cf93ff',
+  'db-before' => 'datomic.db.Db@35f37b93',
+  'db-after' => 'datomic.db.Db@43b227a3',
   'tx-data' =>
-  [[13194139534315, 50, '2024-09-29T14:29:22.072Z', 13194139534315, true],
+  [[13194139534315, 50, '2024-10-06T13:17:39.105Z', 13194139534315, true],
    [4611681620380877804, 72, 'Near to the Wild Heart', 13194139534315, true],
    [4611681620380877804, 73, 'Novel', 13194139534315, true],
    [4611681620380877804, 74, 1943, 13194139534315, true],
@@ -691,10 +691,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@62cd1962',
-  'db-after' => 'datomic.db.Db@702c6634',
+  'db-before' => 'datomic.db.Db@6817aa5c',
+  'db-after' => 'datomic.db.Db@63f25217',
   'tx-data' =>
-  [[13194139534319, 50, '2024-09-29T14:29:22.286Z', 13194139534319, true],
+  [[13194139534319, 50, '2024-10-06T13:17:39.322Z', 13194139534319, true],
    [4611681620380877806, 73, 'Gothic', 13194139534319, true],
    [4611681620380877806, 73, 'Horror', 13194139534319, false]],
   'tempids' => {}
@@ -716,10 +716,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@271bc3fa',
-  'db-after' => 'datomic.db.Db@7d4ff6c1',
+  'db-before' => 'datomic.db.Db@4d739219',
+  'db-after' => 'datomic.db.Db@7f38a06d',
   'tx-data' =>
-  [[13194139534320, 50, '2024-09-29T14:29:22.337Z', 13194139534320, true],
+  [[13194139534320, 50, '2024-10-06T13:17:39.385Z', 13194139534320, true],
    [4611681620380877806, 73, 'Gothic', 13194139534320, false]],
   'tempids' => {}
 }
@@ -738,10 +738,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@20f6e438',
-  'db-after' => 'datomic.db.Db@1c1568f1',
+  'db-before' => 'datomic.db.Db@71ff51fa',
+  'db-after' => 'datomic.db.Db@75c0cb1d',
   'tx-data' =>
-  [[13194139534321, 50, '2024-09-29T14:29:22.377Z', 13194139534321, true],
+  [[13194139534321, 50, '2024-10-06T13:17:39.428Z', 13194139534321, true],
    [4611681620380877804, 73, 'Novel', 13194139534321, false]],
   'tempids' => {}
 }
@@ -760,10 +760,10 @@ client.api.transact!(
 
 ```ruby
 {
-  'db-before' => 'datomic.db.Db@65687c9a',
-  'db-after' => 'datomic.db.Db@67937708',
+  'db-before' => 'datomic.db.Db@30c25bc1',
+  'db-after' => 'datomic.db.Db@a43be7c',
   'tx-data' =>
-  [[13194139534322, 50, '2024-09-29T14:29:22.416Z', 13194139534322, true],
+  [[13194139534322, 50, '2024-10-06T13:17:39.471Z', 13194139534322, true],
    [4611681620380877805, 72, 'A Study in Scarlet', 13194139534322, false],
    [4611681620380877805, 73, 'Detective', 13194139534322, false],
    [4611681620380877805, 74, 1887, 13194139534322, false]],
@@ -807,10 +807,16 @@ cp compose/datomic-flare-dev.yml docker-compose.yml
 docker compose up -d datomic-storage
 
 docker compose run datomic-tools psql \
-  -f bin/sql/postgres-table.sql \
   -h datomic-storage \
   -U datomic-user \
-  -d my-datomic-storage
+  -d my-datomic-storage \
+  -c 'CREATE TABLE datomic_kvs (
+        id TEXT NOT NULL,
+        rev INTEGER,
+        map TEXT,
+        val BYTEA,
+        CONSTRAINT pk_id PRIMARY KEY (id)
+      );'
 
 docker compose up -d datomic-transactor
 
@@ -888,10 +894,16 @@ Create the table for Datomic databases:
 
 ```bash
 docker compose run datomic-tools psql \
-  -f bin/sql/postgres-table.sql \
   -h datomic-storage \
   -U datomic-user \
-  -d my-datomic-storage
+  -d my-datomic-storage \
+  -c 'CREATE TABLE datomic_kvs (
+        id TEXT NOT NULL,
+        rev INTEGER,
+        map TEXT,
+        val BYTEA,
+        CONSTRAINT pk_id PRIMARY KEY (id)
+      );'
 ```
 
 You will be prompted for a password, which is `unsafe`.
@@ -944,7 +956,7 @@ docker compose logs -f datomic-flare-client
 
 You should be able to request both:
 
-Datomic Flare in Peer Mode:
+Flare in Peer Mode:
 ```bash
 curl -s http://localhost:3042/meta \
   -X GET \
@@ -960,7 +972,7 @@ curl -s http://localhost:3042/meta \
 }
 ```
 
-Datomic Flare in Client Mode:
+Flare in Client Mode:
 ```bash
 curl -s http://localhost:3043/meta \
   -X GET \

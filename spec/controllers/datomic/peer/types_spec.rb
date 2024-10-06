@@ -3,7 +3,7 @@
 require 'bigdecimal'
 require 'securerandom'
 
-RSpec.describe 'Datomic Flare Client', :peer do
+RSpec.describe 'Flare Client', :peer do
   context 'when multiple types are defined in a schema' do
     it 'transact and read data in the expected types' do
       skip 'Missing some formats.'

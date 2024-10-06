@@ -3,7 +3,7 @@
 require './ports/dsl/datomic-flare'
 require './components/errors'
 
-RSpec.describe 'Datomic Flare Client', :client do
+RSpec.describe 'Flare Client', :client do
   it 'responds according to Client mode' do
     expect(@flare.meta['meta']['mode']).to eq('client')
 

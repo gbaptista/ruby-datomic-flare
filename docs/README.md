@@ -1,8 +1,8 @@
-# Datomic Flare for Ruby
+# Flare for Ruby
 
-A Ruby gem for interacting with [Datomic](https://www.datomic.com) through [Datomic Flare](https://github.com/gbaptista/datomic-flare).
+A Ruby gem for interacting with [Datomic](https://www.datomic.com) through [Flare](https://github.com/gbaptista/datomic-flare).
 
-![The image features a logo with curved lines forming a ruby, suggesting distortion and movement like space-time.](https://media.githubusercontent.com/media/gbaptista/assets/refs/heads/main/ruby-datomic-flare/ruby-datomic-flare-canvas.png)
+![The image features a logo with curved lines forming a ruby, suggesting distortion and movement like space-time.](https://raw.githubusercontent.com/gbaptista/assets/refs/heads/main/ruby-datomic-flare/ruby-datomic-flare-canvas.jpg)
 
 _This is not an official Datomic project or documentation and it is not affiliated with Datomic in any way._
 
@@ -71,9 +71,9 @@ client.meta
 {
   'meta' =>
     {
-      'at' => '2024-09-29T14:29:21.732845703Z',
+      'at' => '2024-10-06T13:17:38.761128603Z',
       'mode' => 'peer',
-      'took' => { 'milliseconds' => 0.527632 }
+      'took' => { 'milliseconds' => 0.500799 }
     },
   'data' =>
   {
@@ -125,10 +125,16 @@ cp compose/datomic-flare-dev.yml docker-compose.yml
 docker compose up -d datomic-storage
 
 docker compose run datomic-tools psql \
-  -f bin/sql/postgres-table.sql \
   -h datomic-storage \
   -U datomic-user \
-  -d my-datomic-storage
+  -d my-datomic-storage \
+  -c 'CREATE TABLE datomic_kvs (
+        id TEXT NOT NULL,
+        rev INTEGER,
+        map TEXT,
+        val BYTEA,
+        CONSTRAINT pk_id PRIMARY KEY (id)
+      );'
 
 docker compose up -d datomic-transactor
 
@@ -206,10 +212,16 @@ Create the table for Datomic databases:
 
 ```bash
 docker compose run datomic-tools psql \
-  -f bin/sql/postgres-table.sql \
   -h datomic-storage \
   -U datomic-user \
-  -d my-datomic-storage
+  -d my-datomic-storage \
+  -c 'CREATE TABLE datomic_kvs (
+        id TEXT NOT NULL,
+        rev INTEGER,
+        map TEXT,
+        val BYTEA,
+        CONSTRAINT pk_id PRIMARY KEY (id)
+      );'
 ```
 
 You will be prompted for a password, which is `unsafe`.
@@ -262,7 +274,7 @@ docker compose logs -f datomic-flare-client
 
 You should be able to request both:
 
-Datomic Flare in Peer Mode:
+Flare in Peer Mode:
 ```bash
 curl -s http://localhost:3042/meta \
   -X GET \
@@ -278,7 +290,7 @@ curl -s http://localhost:3042/meta \
 }
 ```
 
-Datomic Flare in Client Mode:
+Flare in Client Mode:
 ```bash
 curl -s http://localhost:3043/meta \
   -X GET \
